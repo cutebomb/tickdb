@@ -1,0 +1,56 @@
+load('ift');
+run('IF1101');
+{
+t:=time;
+p=prc;
+va1=askvol1;
+a1=ask1;
+va2=va1+askvol2;
+a2=(va1*a1+ask2*askvol2)/va2;
+va3=va2+askvol3;
+a3=(va2*a2+ask3*askvol3)/va3;
+va4=va3+askvol4;
+a4=(va3*a3+ask4*askvol4)/va4;
+va5=va4+askvol5;
+a5=(va4*a4+ask5*askvol5)/va5;
+if(va1>=10,
+	b10:=ask1,
+	if(va2>=10,
+		b10:=(a1*va1+ask2*(10-va1))/10,
+		if(va3>=10,
+			b10:=(a2*va2+ask3*(10-va2))/10,
+			if(va4>=10,
+				b10:=(a3*va3+ask4*(10-va3))/10))));
+if(va1>=20,
+	b20:=ask1,
+	if(va2>=20,
+		b20:=(a1*va1+ask2*(20-va1))/20,
+		if(va3>=20,
+			b20:=(a2*va2+ask3*(20-va2))/20,
+			if(va4>=20,
+				b20:=(a3*va3+ask4*(20-va3))/20))));
+if(va1>=30,
+	b30:=ask1,
+	if(va2>=30,
+		b30:=(a1*va1+ask2*(30-va1))/30,
+		if(va3>=30,
+			b30:=(a2*va2+ask3*(30-va2))/30,
+			if(va4>=30,
+				b30:=(a3*va3+ask4*(30-va3))/30))));
+if(va1>=40,
+	b40:=ask1,
+	if(va2>=40,
+		b40:=(a1*va1+ask2*(40-va1))/40,
+		if(va3>=40,
+			b40:=(a2*va2+ask3*(40-va2))/40,
+			if(va4>=40,
+				b40:=(a3*va3+ask4*(40-va3))/40))));
+if(va1>=50,
+	b50:=ask1,
+	if(va2>=50,
+		b50:=(a1*va1+ask2*(50-va1))/50,
+		if(va3>=50,
+			b50:=(a2*va2+ask3*(50-va2))/50,
+			if(va4>=50,
+				b50:=(a3*va3+ask4*(50-va3))/50))));
+}

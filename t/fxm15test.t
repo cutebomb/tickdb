@@ -1,0 +1,9 @@
+load('fxm15');
+run(0);
+{
+t:=time;
+o:=open;
+h:=high;
+l:=low;
+c:=close;
+}

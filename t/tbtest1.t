@@ -1,0 +1,10 @@
+load('ctpm1');
+run(0);
+{
+t:=time;
+o:=open;
+h:=high;
+l:=low;
+c:=close;
+midLine:=ama(close,10,2,30);
+}

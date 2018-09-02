@@ -1,0 +1,10 @@
+load('m1');
+run('000001');
+cl:0lf;
+{
+a:1;
+b:sum(a,0);
+c:close;
+t:time;
+cl:sum(close,10);
+}

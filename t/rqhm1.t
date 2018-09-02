@@ -1,0 +1,11 @@
+load('qhm1');
+run('IF1101');
+{
+	t:=time;
+	o:=open;
+	h:=high;
+	l:=low;
+	c:=close;
+	v:=vol;
+	a:=amount;
+}

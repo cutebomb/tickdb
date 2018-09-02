@@ -1,0 +1,10 @@
+load('ctpm1');
+run('au1112');
+display('on');
+{
+t:=time;
+o:=open;
+h:=high;
+l:=low;
+c:=close;
+}
